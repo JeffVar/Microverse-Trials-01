@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-</body>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Survey form page for the Microverse Trials.</p>
+    <form action="" method="get" id="survey-form" class="form-example">
+        <div class="form-example">
+            <label for="name" id="name-label">Enter your name here</label>
+            <input type="text" id="name" placeholder="Write your name here" required>
+        </div>
+        <div class="form-example">
+            <label for="name" id="email-label">Enter your email here</label>
+            <input type="email" id="email" placeholder="Write your email here" required>
+        </div>
+        <div class="form-example">
+            <label for="name" id="number-label">Enter a number</label>
+            <input type="number" id="number" min="0" max="100" placeholder="Write a number between 0-100">
+        </div>
+        <div class="form-example">
+            <select name="" id="dropdown">
+                <option value="Option#1">First option</option>
+                <option value="Option#2">Second option</option>
+            </select>
+        </div>
+        <div class="form-example">
+            <input type="radio" id="Options" name="Options" value="Option #1">
+            <label for="Options">Option #1</label><br>
+
+            <input type="radio" id="Options2" name="Options" value="Option #2">
+            <label for="Options2">Option #2</label><br>
+        </div>
+        <div class="form-example">
+            <input type="checkbox" id="checkOptions" name="checkOptions" value="1">
+            <label for="checkOptions">Option #1</label>
+
+            <input type="checkbox" id="checkOptions2" name="checkOptions" value="2">
+            <label for="checkOptions2">Option #2</label>
+
+            <input type="checkbox" id="checkOptions3" name="checkOptions" value="3">
+            <label for="checkOptions3">Option #3</label>
+        </div>
+        <div class="form-example">
+            <textarea name="Comment" cols="30" rows="10" placeholder="Write here your comment"></textarea>
+        </div>
+        <div class="form-example">
+            <button id="submit">Submit</button>
+
+        </div>
+
+    </form>
+  </body>
 </html>
